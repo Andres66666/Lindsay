@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/nav_home">
+
+    <fragment
+            android:id="@+id/nav_home"
+            android:name="com.example.lindsay.ui.home.HomeFragment"
+            android:label="@string/menu_home"
+            tools:layout="@layout/fragment_home"/>
+
+    <fragment
+            android:id="@+id/nav_gallery"
+            android:name="com.example.lindsay.ui.gallery.GalleryFragment"
+            android:label="@string/menu_gallery"
+            tools:layout="@layout/fragment_gallery"/>
+
+    <fragment
+            android:id="@+id/nav_slideshow"
+            android:name="com.example.lindsay.ui.slideshow.SlideshowFragment"
+            android:label="@string/menu_slideshow"
+            tools:layout="@layout/fragment_slideshow"/>
+
+    <fragment android:id="@+id/nav_reservas"
+              android:name="com.example.lindsay.ui.reservas.ReservasFragment"
+              android:label="fragment_reservas"
+              tools:layout="@layout/fragment_reservas"/>
+
+    <fragment android:id="@+id/nav_productos"
+              android:name="com.example.lindsay.ui.productos.ProductosFragment"
+              android:label="fragment_productos"
+              tools:layout="@layout/fragment_productos"/>
+
+
+    <fragment android:id="@+id/nav_ventas"
+              android:name="com.example.lindsay.ui.ventas.VentasFragment"
+              android:label="fragment_ventas"
+              tools:layout="@layout/fragment_ventas"/>
+
+    <fragment android:id="@+id/nav_ubicacion"
+              android:name="com.example.lindsay.ui.ubicacion.UbicacionFragment"
+              android:label="fragment_ubicacion"
+              tools:layout="@layout/fragment_ubicacion"/>
+</navigation>

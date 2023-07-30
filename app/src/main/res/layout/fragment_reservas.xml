@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.reservas.ReservasFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/fondo22"
+            android:weightSum="3">
+
+        <pl.droidsonroids.gif.GifImageView
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/registro_de_usuarios_9_6_2023"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/txtForgetPassword"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CI"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/borde"
+                        android:backgroundTint="#80000000"
+                        android:fontFamily="casual"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:hint="Ingrese su Carnet"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Estilistas"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                <Spinner
+                        android:id="@+id/Idestilista"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/borde"
+                        android:backgroundTint="#80000000"
+                        android:fontFamily="casual"
+                        android:popupBackground="#80000000"
+                        android:spinnerMode="dropdown"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:entries="@array/idestilista"
+                        android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Evento"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/Evento"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/borde"
+                        android:backgroundTint="#80000000"
+                        android:fontFamily="casual"
+                        android:inputType="text"
+                        android:hint="Ingrese sus Apellidos"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tipo Evento"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/tipoEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/borde"
+                        android:backgroundTint="#80000000"
+                        android:fontFamily="casual"
+                        android:inputType="text"
+                        android:hint="Ingrese el tipo de evento"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de Inicio"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                <EditText
+                        android:id="@+id/fechaInicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/borde"
+                        android:backgroundTint="#80000000"
+                        android:fontFamily="casual"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:maxLines="1"
+                        android:inputType="date"
+                        android:onClick="fechaInicio"
+                        android:hint="Ingrese la fecha"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha Fin"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/fechafin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/borde"
+                        android:backgroundTint="#80000000"
+                        android:fontFamily="casual"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:maxLines="1"
+                        android:inputType="date"
+                        android:onClick="fechafin"
+                        android:hint="Ingrese la fecha"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hora de Inicio"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                <EditText
+                        android:id="@+id/horaInicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/borde"
+                        android:backgroundTint="#80000000"
+                        android:fontFamily="casual"
+                        android:inputType="time"
+                        android:hint="Ingrese la Hora"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:onClick="showTimePickerDialog"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hora Fin"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/Horafin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/borde"
+                        android:backgroundTint="#80000000"
+                        android:fontFamily="casual"
+                        android:inputType="time"
+                        android:hint="Ingrese la Hora"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:onClick="showTimePickerDialog1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <pl.droidsonroids.gif.GifImageButton
+                android:id="@+id/registrar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/transparentColor"
+                android:padding="15dp"
+                android:src="@drawable/registrar"
+                android:scaleType="fitXY"
+                android:textStyle="bold"
+                app:cornerRadius="20dp"
+                app:elevation="10dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
